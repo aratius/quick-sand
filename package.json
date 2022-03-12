@@ -1,6 +1,6 @@
 {
   "name": "@aualrxse/quick-sand",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "private": false,
   "repository": "https://github.com/aratius/quick-sand/",
   "homepage": "https://aualrxse.com/",
@@ -24,19 +24,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@aualrxse/quick-sand": "file:",
-    "asciify": "^1.3.5",
     "glsl-noise": "^0.0.0",
     "gsap": "^3.9.1",
     "lil-gui": "^0.16.1",
     "next": "12.1.0",
-    "opener": "^1.5.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sass": "^1.49.8",
     "three": "^0.137.5",
-    "typescript": "4.5.5",
-    "zx": "^5.1.0"
+    "typescript": "4.5.5"
   },
   "devDependencies": {
     "@types/node": "17.0.18",
@@ -48,6 +44,10 @@
     "eslint-config-next": "12.1.0",
     "glslify-loader": "^2.0.0",
     "raw-loader": "^4.0.2",
-    "stats.js": "^0.17.0"
+    "stats.js": "^0.17.0",
+	"zx": "^5.1.0",
+	"opener": "^1.5.2",
+	"asciify": "^1.3.5",
+	"@aualrxse/quick-sand": "file:"
   }
 }
