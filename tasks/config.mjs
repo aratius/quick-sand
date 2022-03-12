@@ -196,6 +196,7 @@ import Info from "src/components/common/info";
 export default class Index extends Component {
 
     state = {}
+	_webgl = null
     constructor(props) {
         super(props)
         this.state = {}
@@ -204,10 +205,15 @@ export default class Index extends Component {
     componentDidMount() {
     }
 
-	_onRefCanvas(node) {
+	componentWillUnmount() {
+		this._webgl.deInit()
+		this._webgl = null
+	}
+
+	_onRefCanvas = (node) => {
 		if(!node) return
-		const webgl = new WebGLMain(node)
-		webgl.init()
+		this._webgl = new WebGLMain(node)
+		this._webgl.init()
 	}
 
     render() {
@@ -260,6 +266,7 @@ interface State {}
 export default class Index extends Component {
 
     public state: State = {}
+	private _webgl: WebGLMain | null = null
     constructor(props: Props) {
         super(props)
         this.state = {}
@@ -268,10 +275,15 @@ export default class Index extends Component {
     public componentDidMount(): void {
     }
 
-	private _onRefCanvas(node: HTMLCanvasElement): void {
+	componentWillUnmount(): void {
+		this._webgl?.deInit()
+		this._webgl = null
+	}
+
+	private _onRefCanvas = (node: HTMLCanvasElement): void => {
 		if(!node) return
-		const webgl = new WebGLMain(node)
-		webgl.init()
+		this._webgl = new WebGLMain(node)
+		this._webgl.init()
 	}
 
     public render(): ReactElement {

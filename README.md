@@ -26,10 +26,10 @@ Open [http://localhost:3000/projects/[PROJECT_NAME]](http://localhost:3000/proje
 $ npx quick-sand create --n Trail --ts
 ```
 
-| name | description                                         |
-| ---- | --------------------------------------------------- |
-|  -name \| --n \[PROJECT_NAME\] | A module name following the -name qualifier. |
-|  -typescript \| --ts | A module which is created is written in TypeScript. |
+| option | short hand | description                                         |
+| ---- | --------- | ------------------------------------------ |
+|  -name  \[PROJECT_NAME\] | --n | A module name following the -name qualifier. |
+|  -typescript  | --ts | A module which is created is written in TypeScript. |
 
 ## Edit Project
 

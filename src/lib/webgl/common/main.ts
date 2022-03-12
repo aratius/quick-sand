@@ -27,6 +27,7 @@ export default class WebGLBase {
 	protected _settings: WebGLOptions = {}
 	private _startTime: number = 0
 	private _stats: Stats | null = null
+	private _updater: number = -1
 
 	/**
 	 *
@@ -76,7 +77,9 @@ export default class WebGLBase {
 		if (this._settings.shouldUpdate) this._update()
 	}
 
-	public _deInit(): void {
+	public deInit(): void {
+		window.removeEventListener("resize", this._resize)
+		cancelAnimationFrame(this._updater)
 		this._deInitChild()
 	}
 
@@ -84,7 +87,7 @@ export default class WebGLBase {
 		this._updateChild()
 		this.render()
 		this._stats?.update()
-		requestAnimationFrame(this._update)
+		this._updater = requestAnimationFrame(this._update)
 	}
 
 	private _resize = (): void => {

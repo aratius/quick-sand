@@ -1,8 +1,13 @@
 {
 	"name": "/",
 	"pages": [
-		"app_20222616234",
 		"template",
-		"templateJS"
+		"templateJS",
+		{
+			"name": "test",
+			"pages": [
+				"hoge"
+			]
+		}
 	]
 }
