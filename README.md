@@ -73,6 +73,25 @@ The page auto-updates as you edit the file.
 
 `src/styles/[PROJECT_NAME].module.scss`
 
+
+## Next Source Directory Construction
+
+|path|description|
+|---|---|
+|src/api| Any modules that sends some request to outer API. |
+|src/components| React (.jsx, .tsx) components. |
+|src/constants| Constants |
+|src/pages| When a file is added to the this directory, it's automatically available as a route. See [here](https://nextjs.org/docs/routing/introduction) |
+|src/styles| Stylesheets |
+|src/types| Type declaration files. |
+|src/utils| Utility functions etc. |
+|src/lib| Any libraries that doesn't depend on components. |
+
+## Index Page
+
+- Creating the sitemap in index page automatically every creation.
+- You can edit the styles(src/styles/index.module.scss) and customize its looks.
+
 ### Author
 
 arata matsumoto ([@aualrxse](https://twitter.com/aualrxse))
