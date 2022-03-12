@@ -1,0 +1,87 @@
+$BLOCK_SIZE: 2rem;
+
+.container {
+	padding: 30px;
+	height: 100vh;
+	background-color: #111;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+
+	header {
+		margin-bottom: 50px;
+		text-align: center;
+
+		h1 {
+			font-size: 3rem;
+		}
+	}
+
+	section {
+		margin: 20px;
+		padding: 20px;
+		border: 1px solid #fff;
+		border-radius: 10px;
+		flex-basis: 1;
+		flex-grow: 1;
+		overflow-y: scroll;
+		ol {
+			font-size: $BLOCK_SIZE;
+			li {
+				margin-left: $BLOCK_SIZE;
+				position: relative;
+
+				&::before {
+					content: "";
+					width: $BLOCK_SIZE / 2;
+					height: $BLOCK_SIZE / 2;
+					position: absolute;
+					top: 0;
+					left: -$BLOCK_SIZE * 3 / 4;
+					border-left: 1px solid #fff;
+					border-bottom: 1px solid #fff;
+				}
+
+				&::after {
+					content: "";
+					width: $BLOCK_SIZE / 2;
+					height: $BLOCK_SIZE / 2;
+					position: absolute;
+					top: $BLOCK_SIZE / 2;
+					left: -$BLOCK_SIZE * 3 / 4;
+					border-left: 1px solid #fff;
+				}
+
+				&:last-child {
+					&::after {
+						display: none;
+					}
+				}
+
+				// ディレクトリの時線伸ばす
+				&.dir {
+					&::after {
+						height: calc(100% - #{$BLOCK_SIZE} / 2);
+					}
+				}
+
+				a {
+					color: #fff;
+					&:hover {
+						opacity: 0.7;
+					}
+				}
+			}
+
+			p {
+			}
+		}
+	}
+
+	footer {
+		text-align: center;
+		p {
+			font-size: 1.5rem;
+		}
+	}
+}

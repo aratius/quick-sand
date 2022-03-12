@@ -1,0 +1,13 @@
+{
+	"name": "/",
+	"pages": [
+		"template",
+		"templateJS",
+		{
+			"name": "test",
+			"pages": [
+				"t1"
+			]
+		}
+	]
+}

@@ -1,0 +1,118 @@
+.container {
+	width: 100vw;
+	min-height: 100vh;
+	background-color: rgb(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.3s;
+	transition-delay: 0.2s;
+
+	&.visible {
+		pointer-events: initial;
+		opacity: 1;
+		transition-delay: 0s;
+
+		.info {
+			opacity: 1;
+			transition-delay: 0.2s;
+		}
+	}
+
+	.info {
+		width: 30%;
+		min-width: 200px;
+		margin: auto;
+		margin-top: 30vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: white;
+		opacity: 0;
+		transition: opacity 0.3s;
+		transition-delay: 0;
+
+		&__title {
+			width: 100%;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			border-bottom: 1px solid white;
+			font-size: 3rem;
+			text-align: center;
+		}
+
+		&__author {
+			font-size: 1.5rem;
+			margin-bottom: 10px;
+
+			&__detail {
+				margin-bottom: 20px;
+				text-align: center;
+				line-height: 1.5;
+
+				a {
+					color: white;
+					border-bottom: 1px solid white;
+				}
+			}
+		}
+
+		&__twitter {
+			height: 20px;
+			margin-bottom: 20px;
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			&__follow {
+				height: 100%;
+				img {
+					height: 100%;
+					display: flex;
+					align-items: center;
+				}
+			}
+
+			&__share {
+				height: 100%;
+				font-size: 2rem;
+				color: white;
+			}
+
+			:not(:last-child) {
+				padding-right: 10px;
+				margin-right: 10px;
+				border-right: 1px solid white;
+			}
+		}
+
+		&__footer {
+			p {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+.button {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	border-radius: 50%;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	z-index: 100;
+
+	// テキストの設定
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 1.5rem;
+}
