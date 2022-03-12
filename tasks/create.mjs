@@ -10,22 +10,25 @@ import { COL_SUCCEED, COL_HAPPY, COL_NORMAL, COL_WARNING, getRandomColor, COMPON
 import { makeDirectory } from "./makeDirectory.mjs"
 import { updateInfo } from "./updateInfo.mjs"
 import "zx/globals"
-const arg = argv._
+const arg = process.argv
 // check argv
-if(arg.length < 1) {
-	console.log(chalk.red(" --- ERROR --- "));
-	console.log(chalk.red("arguments is not satisfied."));
-	throw new Error("error")
-}
+const d = new Date()
+let appName = `app_${d.getFullYear()}${d.getMonth()}${d.getDay()}${d.getHours()}${d.getMinutes()}${d.getSeconds()}`
 let ts = false
-// ts option
-for(const i in arg) if(arg[i] == "ts") ts = true
+for(let i = 0; i < arg.length; i++) {
+	const a = arg[i]
+	const hasNext = i+1 <= arg.length-1
+	if(a.match(/(--n|-name)/) != null) {
+		if (hasNext) appName = arg[i+1]
+	}
+	if(a.match(/(--t|-typescript)/) != null) ts = true
+}
 
 const crrDir = process.cwd()
 const pageJS = ts ? PAGE_TS : PAGE_JS
 const componentJS = ts ? COMPONENT_TS : COMPONENT_JS
 const style = STYLE
-const project = arg[0]
+const project = appName
 // 最後の要素（ファイル名）を覗いたディレクトリ
 const dir = project.split("/")
 const projectName = dir.pop()

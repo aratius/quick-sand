@@ -27,7 +27,6 @@ const searchFile = async (dir, arr) => {
 
 export const updateInfo = async () => {
 	const crrDir = process.cwd()
-	console.log("log --------------", crrDir)
 	const filesJson = { name: "/",pages: [] }
 	await searchFile(`${crrDir}/src/pages/projects`, filesJson.pages)
 
