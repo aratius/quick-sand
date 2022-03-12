@@ -13,7 +13,7 @@ import "zx/globals"
 const arg = process.argv
 // check argv
 const d = new Date()
-let appName = `app_${d.getFullYear()}${d.getMonth()}${d.getDay()}${d.getHours()}${d.getMinutes()}${d.getSeconds()}`
+let appName = `app_${d.getFullYear()}${d.getMonth() + 1}${d.getDate()}${d.getHours()}${d.getMinutes()}${d.getSeconds()}`
 let ts = false
 for(let i = 0; i < arg.length; i++) {
 	const a = arg[i]
