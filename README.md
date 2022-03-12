@@ -11,11 +11,11 @@ $ npm install
 ## Create Project
 
 ```
-$ npm run create [PROJECT_NAME] [...options]
+$ npm run create -name [PROJECT_NAME]
 ```
 
 ```
-$ npm run create Trail ts
+$ npm run create -name Trail
 ```
 
 Open [http://localhost:3000/projects/[PROJECT_NAME]](http://localhost:3000/projects/[PROJECT_NAME]) with your browser to see the result.
@@ -23,12 +23,13 @@ Open [http://localhost:3000/projects/[PROJECT_NAME]](http://localhost:3000/proje
 ## Options
 
 ```
-$ npm run create Trail ts
+$ npm run create --n Trail --ts
 ```
 
 | name | description                                         |
 | ---- | --------------------------------------------------- |
-| ts   | A Module which is created is written in TypeScript. |
+|  -name \| --n \[PROJECT_NAME\] | A module name following the -name qualifier. |
+|  -typescript \| --ts | A module which is created is written in TypeScript. |
 
 ## Edit Project
 
