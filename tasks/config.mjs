@@ -218,7 +218,7 @@ export default class Index extends Component {
 					shareText=""
 					shareUrl=""
 					twitterId=""
-					cc={\`© ${ new Date().getFullYear()} | QuickSand\`}
+					cc={\`© ${new Date().getFullYear()} | quick-sand\`}
 					details={[
 						[
 							{
@@ -227,8 +227,8 @@ export default class Index extends Component {
 							},
 							{
 								type: "link",
-								text: "https://github.com/aratius/QuickSand",
-								link: "https://github.com/aratius/QuickSand"
+								text: "quick-sand",
+								link: "https://github.com/aratius/quick-sand"
 							}
 						]
 					]}
@@ -282,7 +282,7 @@ export default class Index extends Component {
 					shareText=""
 					shareUrl=""
 					twitterId=""
-					cc={\`© ${ new Date().getFullYear()} | QuickSand\`}
+					cc={\`© ${new Date().getFullYear()} | quick-sand\`}
 					details={[
 						[
 							{
@@ -291,8 +291,8 @@ export default class Index extends Component {
 							},
 							{
 								type: "link",
-								text: "https://github.com/aratius/QuickSand",
-								link: "https://github.com/aratius/QuickSand"
+								text: "quick-sand",
+								link: "https://github.com/aratius/quick-sand"
 							}
 						]
 					]}
