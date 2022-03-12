@@ -36,8 +36,8 @@ $ npm run create --n Trail --ts
 You can start editing the page by modifying
 
 -   `src/pages/projects/[PROJECT_NAME].jsx`
--   `src/components/[PROJECT_NAME]/main.js`
--   `src/styles/[PROJECT_NAME].module.scss`
+-   `src/lib/webgl/projects/[PROJECT_NAME]/main.js`
+-   `src/styles/projects/[PROJECT_NAME].module.scss`
 
 The page auto-updates as you edit the file.
 
@@ -47,7 +47,7 @@ The page auto-updates as you edit the file.
 
 ### WebGL Entry Point
 
-`src/components/[PROJECT_NAME]/main.js`
+`src/lib/webgl/projects/[PROJECT_NAME]/main.js`
 
 -   This class extends from `WebGLBase`.
 -   You can access all the public or protected `WebGLBase` api.
@@ -71,7 +71,7 @@ The page auto-updates as you edit the file.
 
 ### Style Entry Point
 
-`src/styles/[PROJECT_NAME].module.scss`
+`src/styles/projects/[PROJECT_NAME].module.scss`
 
 
 ## Next Source Directory Construction

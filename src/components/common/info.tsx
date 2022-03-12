@@ -1,7 +1,5 @@
 import { Component, ReactElement, SyntheticEvent } from "react";
-import { EventEmitter } from "events"
-import gsap from "gsap"
-import styles from "src/styles/lib/info.module.scss"
+import styles from "src/styles/common/info.module.scss"
 
 interface Detail {
 	type: "link" | "text",
