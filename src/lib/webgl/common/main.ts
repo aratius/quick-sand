@@ -64,9 +64,9 @@ export default class WebGLBase {
 		this._renderer = new WebGLRenderer({ canvas: this._canvas!, antialias: true })
 		if (this._settings.fillScreen) this._renderer.setSize(innerWidth, innerHeight)
 		if (this._settings.camera == "orthographic") {
-			this._camera = new _PerspectiveCamera(this._settings.cameraSettings as PerspectiveCameraOptions)
-		} else {
 			this._camera = new _OrthographicCamera(this._settings.cameraSettings as OrthographicCameraOptions)
+		} else {
+			this._camera = new _PerspectiveCamera(this._settings.cameraSettings as PerspectiveCameraOptions)
 		}
 		this._camera.updateProjectionMatrix()
 		this._startTime = Date.now() / 1000
