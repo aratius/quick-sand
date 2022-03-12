@@ -11,11 +11,11 @@ $ npm install
 ## Create Project
 
 ```
-$ npm run create -name [PROJECT_NAME]
+$ npx quick-sand create -name [PROJECT_NAME]
 ```
 
 ```
-$ npm run create -name Trail
+$ npx quick-sand create -name Trail
 ```
 
 Open [http://localhost:3000/projects/[PROJECT_NAME]](http://localhost:3000/projects/[PROJECT_NAME]) with your browser to see the result.
@@ -23,7 +23,7 @@ Open [http://localhost:3000/projects/[PROJECT_NAME]](http://localhost:3000/proje
 ## Options
 
 ```
-$ npm run create --n Trail --ts
+$ npx quick-sand create --n Trail --ts
 ```
 
 | name | description                                         |
