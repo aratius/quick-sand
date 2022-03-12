@@ -5,7 +5,6 @@
  */
 $.verbose = false;
 
-console.log(process.cwd());
 // message -----
 import { COL_SUCCEED, COL_HAPPY, COL_NORMAL, COL_WARNING, getRandomColor, COMPONENT_JS, COMPONENT_TS, PAGE_JS, PAGE_TS, STYLE } from "./config.mjs"
 import { makeDirectory } from "./makeDirectory.mjs"

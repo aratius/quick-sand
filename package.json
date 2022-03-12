@@ -2,8 +2,10 @@
   "name": "@aualrxse/quick-sand",
   "version": "0.0.5",
   "private": false,
-  "repository": "https://github.com/aratius/QuickSand/",
+  "repository": "https://github.com/aratius/quick-sand/",
   "homepage": "https://aualrxse.com/",
+  "description": "A Template Engine for all developers loves three.",
+  "license": "MIT",
   "keywords": [
     "javascript",
     "typescript",
@@ -19,8 +21,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "create": "node ./tasks/create.mjs"
+    "lint": "next lint"
   },
   "dependencies": {
     "@aualrxse/quick-sand": "file:",
