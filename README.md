@@ -68,7 +68,7 @@ The page auto-updates as you edit the file.
 | \_camera     | protected | \_PerspectiveCameara \| \_OrthographicCamera |             |
 | \_canvas     | protected | HTMLCanvasElement                            |             |
 | \_settings   | protected | WebGLOptions                                 |             |
-| \elapsedTime   | number | Elapsed time from last initialization         |             |
+| \_elapsedTime   | number | Elapsed time from last initialization         |             |
 
 ### Style Entry Point
 

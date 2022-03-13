@@ -10,7 +10,7 @@ export default class Main extends WebGLBase {
 
 	constructor(canvas: HTMLCanvasElement) {
 		super(canvas, {
-			camera: "orthographic"
+			camera: "perspective"
 		})
 	}
 
