@@ -1,6 +1,6 @@
 <img src="https://user-images.githubusercontent.com/59504416/193527883-d77dc0ae-00b9-401d-a3c5-ba75115cc1d8.png" width="150" />
 
-A Project is based on [Next.js](https://nextjs.org/docs).
+This Project is based on [Next.js](https://nextjs.org/docs).
 
 To know more about Next.js, see `README_NEXT.md`.
 
